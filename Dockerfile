@@ -61,7 +61,7 @@ FROM alpine:3.9
 COPY --from=build /usr/local /usr/local
 
 RUN apk update && apk add --no-cache \
-      zlib \
+      zlib-dev \
       libbz2 \
       xz-dev \
       libcurl
